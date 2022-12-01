@@ -1,0 +1,80 @@
+Ques.1. What is DBMS?
+
+ANS> DBMS is a collection of programs that facilitates users to create and maintain a database. In other words, DBMS provides us an interface or tool for performing 
+different operations such as the creation of a database, inserting data into it, deleting data from it, updating the data, etc. DBMS is a software in which data is 
+stored in a more secure way as compared to the file-based system. Using DBMS, we can overcome many problems such as- data redundancy, data inconsistency, easy access, 
+more organized and understandable, and so on. There is the name of some popular Database Management System- MySQL, Oracle, SQL Server, Amazon simple DB (Cloud-based), 
+etc.
+
+
+Ques.2. What is a database?
+
+Ans> Database is a logical, consistent and organized collection of data that it can easily be accessed, managed and updated. Databases, also known as electronic database
+are structured to provide the facility of creation, insertion, updating of the data efficiently and are stored in the form of a file or set of files, on the magnetic
+disk, tapes and another sort of secondary devices. Database mostly consists of the objects (tables), and tables include of the records and fields. Fields are the basic
+units of data storage, which contain the information about a particular aspect or attribute of the entity described by the database. DBMS is used for extraction of data
+from the database in the form of the queries.
+
+
+Ques.3. What is a database system?
+
+Ans> The collection of database and DBMS software together is known as a database system. Through the database system, we can perform many activities such as-
+The data can be stored in the database with ease, and there are no issues of data redundancy and data inconsistency.
+The data will be extracted from the database using DBMS software whenever required. So, the combination of database and DBMS software enables one to store, retrieve and
+access data with considerate accuracy and security.
+
+
+Ques.4. What are the advantages of DBMS?
+
+Ans> o	Redundancy control
+o	Restriction for unauthorized access
+o	Provides multiple user interfaces
+o	Provides backup and recovery
+o	Enforces integrity constraints
+o	Ensure data consistency
+o	Easy accessibility
+o	Easy data extraction and data processing due to the use of queries
+
+
+Ques.5. What is a checkpoint in DBMS?
+
+Ans> The Checkpoint is a type of mechanism where all the previous logs are removed from the system and permanently stored in the storage disk.
+There are two ways which can help the DBMS in recovering and maintaining the ACID properties, and they are- maintaining the log of each transaction and maintaining 
+shadow pages. So, when it comes to log based recovery system, checkpoints come into existence. Checkpoints are those points to which the database engine can recover 
+after a crash as a specified minimal point from where the transaction log record can be used to recover all the committed data up to the point of the crash.
+
+
+Ques.6. When does checkpoint occur in DBMS?
+
+Ans> A checkpoint is like a snapshot of the DBMS state. Using checkpoints, the DBMS can reduce the amount of work to be done during a restart in the event of subsequent
+crashes. Checkpoints are used for the recovery of the database after the system crash. Checkpoints are used in the log-based recovery system. When due to a system crash
+we need to restart the system then at that point we use checkpoints. So that, we don't have to perform the transactions from the very starting.
+
+
+Ques.7. What do you mean by transparent DBMS?
+
+Ans> The transparent DBMS is a type of DBMS which keeps its physical structure hidden from users. Physical structure or physical storage structure implies to the memory
+manager of the DBMS, and it describes how the data stored on disk.
+
+
+Ques.8. What are the unary operations in Relational Algebra?
+
+Ans> PROJECTION and SELECTION are the unary operations in relational algebra. Unary operations are those operations which use single operands. Unary operations are
+SELECTION, PROJECTION, and RENAME.
+As in SELECTION relational operators are used for example - =,<=,>=, etc.
+
+
+Ques.9. What is RDBMS?
+
+Ans> RDBMS stands for Relational Database Management Systems. It is used to maintain the data records and indices in tables. RDBMS is the form of DBMS which uses the 
+structure to identify and access data concerning the other piece of data in the database. RDBMS is the system that enables you to perform different operations such 
+as- update, insert, delete, manipulate and administer a relational database with minimal difficulties. Most  of the time RDBMS use SQL language because it is easily 
+understandable and is used for often.
+
+
+Ques. 10. What is a degree of Relation?
+
+Ans> The degree of relation is a number of attribute of its relation schema. A degree of relation is also known as Cardinality it is defined as the number of occurrence
+of one entity which is connected to the number of occurrence of other entity. There are three degree of relation they are one-to-one(1:1), one-to-many(1:M), many-to-one
+(M:M).
+
