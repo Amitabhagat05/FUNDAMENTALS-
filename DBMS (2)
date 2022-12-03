@@ -1,0 +1,62 @@
+Ques. 1 What is the Relationship?
+
+Ans> The Relationship is defined as an association among two or more entities. There are three type of relationships in DBMS-
+One-To-One: Here one record of any object can be related to one record of another object.
+One-To-Many (many-to-one): Here one record of any object can be related to many records of other object and vice versa.
+Many-to-many: Here more than one records of an object can be related to n number of records of another object.
+
+
+Ques. 2 What are the disadvantages of file processing systems?
+
+Ans> o	Inconsistent
+o	Not secure
+o	Data redundancy
+o	Difficult in accessing data
+o	Data isolation
+o	Data integrity
+o	Concurrent access is not possible
+o	Limited data sharing
+o	Atomicity problem
+
+
+Ques. 3 What is data abstraction in DBMS?
+
+Ans> Data abstraction in DBMS is a process of hiding irrelevant details from users. Because database systems are made of complex data structures so, it makes accessible the user interaction with the database.
+
+
+Ques. 4 What are the three levels of data abstraction?
+
+Ans> Physical level: It is the lowest level of abstraction. It describes how data are stored.
+Logical level: It is the next higher level of abstraction. It describes what data are stored in the database and what the relationship among those data is.
+View level: It is the highest level of data abstraction. It describes only part of the entire database.
+
+
+Ques. 5 What is DDL (Data Definition Language)?
+
+Ans> Data Definition Language (DDL) is a standard for commands which defines the different structures in a database. Most commonly DDL statements are CREATE, ALTER, and DROP. These commands are used for updating data into the database.
+
+
+Ques. 6 What is DML (Data Manipulation Language)?
+
+Ans> DData Manipulation Language (DML) is a language that enables the user to access or manipulate data as organized by the appropriate data model. For example- SELECT, UPDATE, INSERT, DELETE.
+
+
+Ques. 8 What are the types of DML?
+
+Ans> Procedural DML or Low level DML: It requires a user to specify what data are needed and how to get those data.
+Non-Procedural DML or High level DML: It requires a user to specify what data are needed without specifying how to get those data.
+
+Ques. 9 Explain the functionality of DML Compiler.
+
+Ans> The DML Compiler translates DML statements in a query language that the query evaluation engine can understand. DML Compiler is required because the DML is the family of syntax element which is very similar to the other programming language which requires compilation. So, it is essential to compile the code in the language which query evaluation engine can understand and then work on those queries with proper output.
+
+Ques. 10 What is Relational Algebra?
+
+Ans> Relational Algebra is a Procedural Query Language which contains a set of operations that take one or two relations as input and produce a new relationship. Relational algebra is the basic set of operations for the relational model. The decisive point of relational algebra is that it is similar to the algebra which operates on the number.
+o	select
+o	project
+o	set difference
+o	union
+o	rename, etc.
+
+
