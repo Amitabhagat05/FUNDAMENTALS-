@@ -1,0 +1,44 @@
+Ques. 1 What is normalization?
+
+Ans> Normalization is a process of analysing the given relation schemas according to their functional dependencies. It is used to minimize redundancy and also used to minimize insertion, deletion and update distractions. Normalization is considered as an essential process as it is used to avoid data redundancy, insertion anomaly, updation anomaly, deletion anomaly.
+
+
+Ques.2 What are the normal forms of normalization? 
+
+Ans> o	First Normal Form(1NF)
+o	Second Normal Form(2NF)
+o	Third Normal Form(3NF)
+o	Boyce & Codd Normal Form(BCNF)
+
+
+Ques. 3 What is Denormalization?
+
+Ans> Denormalization is the process of boosting up database performance and adding of redundant data which helps to get rid of complex data. Denormalization is a part of database optimization technique. This process is used to avoid the use of complex and costly joins. Denormalization doesn't refer to the thought of not to normalize instead of that denormalization takes place after normalization. In this process, firstly the redundancy of the data will be removed using normalization process than through denormalization process we will add redundant data as per the requirement so that we can easily avoid the costly joins.
+
+
+Ques. 4 What is functional Dependency?
+
+Ans> Functional Dependency is the starting point of normalization. It exists when a relation between two attributes allow you to determine the corresponding attribute's value uniquely. The functional dependency is also known as database dependency and defines as the relationship which occurs when one attribute in a relation uniquely determines another attribute. It is written as A->B which means B is functionally dependent on A.
+
+
+Ques. 5 What do you mean by durability in DBMS?
+
+Ans> Once the DBMS informs the user that a transaction has completed successfully, its effect should persist even if the system crashes before all its changes are reflected on disk. This property is called durability. Durability ensures that once the transaction is committed into the database, it will be stored in the non-volatile memory and after that system failure cannot affect that data anymore.
+
+
+Ques. 6 What do you understand by query optimization?
+
+Ans> The term query optimization specifies an efficient execution plan for evaluating a query that has the least estimated cost. The concept of query optimization came into the frame when there were a number of methods, and algorithms existed for the same task then the question arose that which one is more efficient and the process of determining the efficient way is known as query optimization.
+
+
+Ques. 7 What are the benefits of query optimization ?
+
+Ans> o	It reduces the time and space complexity.
+o	More queries can be performed as due to optimization every query comparatively takes less time.
+o	User satisfaction as it will provide output fast
+
+
+Ques. 8 What are keys in normalization?
+
+Ans> Keys are a core element of normalization, so you can expect the employer to ask about them during an intervie. There are many keys you can list, but if you can’t remember them all or don’t have time, consider naming at least three or four of them. If you’re able, you can elaborate on what those keys present.
+
