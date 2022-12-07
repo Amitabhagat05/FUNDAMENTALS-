@@ -1,0 +1,59 @@
+Ques 1. What is an Array in Programming?
+
+Ans> •	An Array is a collection of similar data types stored in contiguous memory locations.
+•	At the time of declaration of an array, you must specify the type of data with the array name.
+
+
+Ques 2. How do you declare an Array?
+
+Ans> Array declaration syntax in C/C++:
+DataType ArrayName [size];
+Array declaration syntax  in Java:
+int [] intArray; 
+
+
+Ques 3. What are the features of Array?
+
+Ans> •	An array is fixed in length i.e static in nature.
+•	An array can hold primitive types and object references.
+•	In an array when a reference is made to a nonexistent element, an IndexOutOfRangeException occurs.
+•	 Array indexing starts from 0, not 1.
+
+
+Ques 4. What are the Advantages of Array?
+
+Ans> •	Multiple elements of Array can be sorted at the same time.
+•	Using the index, we can access any element in O(1) time.
+
+
+Ques 5. What are the Disadvantages of Array?
+
+Ans> •	You need to specify how many elements you're going to store in your array ahead of time and We can not increase or decrease the size of the Array after creation.
+•	You have to shift the other elements to fill in or close gaps, which takes worst-case O(n) time.
+
+
+Ques 6. What is the default value of Array in Java?
+
+Ans> If we don't specify the values by ourselves, then Java assigns default values in them which are 0 for byte, short, int, and long, 0.0 for float and double, false for boolean, and null for objects respectively.
+
+
+Ques 7. What is the time complexity for performing basic operations in an array?
+
+Ans> The Time Complexity of different operations in an array is: For analyzing the real-time complexity you also have to consider the time in bringing the block of memory from an external device to RAM which takes O(√N) time.
+
+
+Ques 8. Can you declare an array without assigning the size of an array?
+
+Ans> No, we cannot declare an array without assigning size. If we declare an array without size, it will throw compile time error
+
+
+Ques 9. Difference between Array and Object.
+
+Ans> •	An object represents a thing with characteristics (called a property), whereas an array creates a list of data and stores it in a single variable. Using brackets and dots, we can access, alter, and delete items from objects, while a variety of built-in methods and zero-based indexing allow us to access and modify items in arrays. We can iterate over object properties and array items using various different loops (e.g. for, for…in, for…of, forEach()).
+•	All Java objects are dynamically allocated on the heap. Unlike C++, where objects can be allocated in memory either on Heap or on Stack. When we use the new() method in C++, the object is allocated on the heap, otherwise on Stack if not global or static.
+
+
+Ques 10. Where is an Array stored in JVM memory?
+
+Ans> An Array is an object in java. So, Array is stored in heap memory in Java Virtual Machine.
+
