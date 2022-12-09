@@ -1,0 +1,61 @@
+Ques. 1 Can a Negative number be passed in Array size?
+
+Ans> No, a negative number cannot be passed as array size. If you pass a negative number in Array size then you will get the NegativeArraySizeException at run time.
+
+
+Ques. 2 When will we get ArrayStoreException?
+
+Ans> •	ArrayStoreException is a runtime exception. 
+•	For example, you will get this exception at run time if you declare a String Array and then try to insert integer elements in the array.
+
+
+Ques. 3 When will we get ArrayIndexOutOfBounds Exception?
+
+Ans> ArrayIndexOutOfBoundsis a runtime exception that occurs when the program tries to access the invalid index of an array such as an Index higher than the size of the array or a negative index.
+
+
+Ques. 4 We know that Arrays are objects so why cannot we write strArray.length()?
+
+Ans> We cannot write strArray.length() because length is not a method, it's a data item of an array. We can use the methods of Object like toString() and hashCode() against Array. 
+
+
+Ques. 5 Can the sizeof operator be used to tell the size of an array passed to a function?
+
+Ans> Passing an array as a parameter in C or C++ does not pass information about how many elements there are in the array. Although sizeof() can tell you the size of the pointer and the size of the type it points to, it cannot tell you how many bytes are occupied by the entire array.
+
+
+Ques. 6 What do you mean by the terms “Dimension” and “Subscript” when we talk about arrays?
+
+Ans> •	In an array "Dimension" is the number of indices, or subscripts, that you need for specifying an individual element. Dimensions and subscripts may be confusing. 
+•	A subscript is a number, while the dimension is a description of the range of acceptable keys.
+•	You only need 1 subscript for each dimension of the array.
+•	For example, arr[10][5] is an array having 2 dimensions:
+o	One with size 10 and the other with size 5. You need 2 subscripts to address its elements. One between 0 and 9, inclusive; the other between 0 and 4.
+
+
+Ques. 7 How do you remove a particular element from an array?
+
+Ans> •	You can't directly remove elements from the original array, as arrays are fixed sets and the size can't change therefore the interviewer is looking for you to suggest an alternate solution and address the issue that the question presents. The best way to remove an element would be to create a new array. In this array, you could include copies of elements of the first array and omit only the element you want to remove.
+•	Another approach is searching for the target element in the array and then moving all the elements in one position back which are on the right side of the target element.
+
+
+Ques. 8 How can you get the index of an array element?
+
+Ans> •	You can find the index of an element through a linear or binary search. A linear search is a function in which you loop through each and every element of an array until it finds the match of the desired element. When it finds the matching element, it returns the index. Therefore time complexity of the linear search is O(n). Linear search can be applied to sorted as well as an unsorted array.
+•	If the array is sorted, you can use a binary search that repeatedly splits the array in half until the median of the interval matches the desired element and returns the index. Therefore time complexity of the binary search is O(log n)
+
+
+Ques. 9 Why is the complexity of fetching from an Array be O(1)?
+
+Ans>In an Array, objects are stored in continuous memory location. So, if you know the address of the base object then you will be able to find the address of the ith object.
+address(a[i]) = address(a[0]) + i*size(object)
+This term is independent of n, so the time complexity of fetching from an Array is O(1).
+
+
+Ques. 10 Compare Arrays with Linked Lists.
+
+Ans>•	Size: The size of an array cannot be altered at runtime since data can only be stored in contiguous blocks of memory in an array. However, due to the node structure of a linked list, its size can be altered easily since each node points to the next one such that data can exist at scattered (non-contiguous) addresses.
+•	Memory allocation: For arrays, memory is allocated at compile time whereas for linked lists memory is allocated at runtime. But, a dynamically allocated array also allocates memory at runtime.
+•	Memory efficiency: For the same number of elements, the linked list uses more memory due to its node structure since each node stores a reference to the next node along with the data. However, linked lists may use less memory overall compared to arrays when there is uncertainty about size or there are large variations in the size of data elements.
+•	Execution time: In the case of a linked list, all the previous elements must be traversed to reach any element whereas elements in an array can be accessed directly using their index. As a result, some operations such as modifying an element are faster in arrays, while some other operations such as inserting an element are faster in linked lists.
+
