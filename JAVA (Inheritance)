@@ -1,0 +1,71 @@
+Ques. 1 What are the main features of OOPs in java?
+
+Ans: •	Inheritance
+     •	Encapsulation
+     •	Polymorphism
+     •	Data Abstraction
+
+
+Ques. 2 What is Inheritance in Java?
+
+Ans: The technique of creating a new class by using an existing class functionality is called inheritance in Java. In other words, inheritance is a process where a child class acquires all the properties and behaviors of the parent class.
+
+
+Ques. 3 Why do we need to use inheritance?
+
+Ans: Inheritance is one of the main pillars of OOPs concept. Some objects share certain properties and behaviors. By using inheritance, a child class acquires all properties and behaviors of parent class.
+
+
+Ques. 4 What are the reasons to use inheritance in java ?
+
+Ans: 	We can reuse the code from the base class.
+     	Using inheritance, we can increase features of class or method by overriding.
+     	Inheritance is used to use the existing features of class.
+     	It is used to achieve runtime polymorphism i.e method overriding.
+
+
+Ques. 4 What is Is-A relationship in Java?
+
+Ans: Is-A relationship represents Inheritance. It is implemented using the “extends” keyword. It is used for code reusability.
+
+
+Ques. 5 What is super class and subclass?
+
+Ans: A class from where a subclass inherits features is called superclass. It is also called base class or parent class.
+A class that inherits all the members (fields, method, and nested classes) from other class is called subclass. It is also called a derived class, child class, or extended class.
+
+
+Ques. 6 How is Inheritance implemented/achieved in Java?
+
+Ans: Inheritance can be implemented or achieved by using two keywords:
+     1.	extends: extends is a keyword that is used for developing the inheritance between two classes and two interfaces.
+     2.	implements: implements keyword is used for developing the inheritance between a class and interface.
+
+
+Ques. 7 Write the syntax for creating the subclass of a class?
+
+Ans: A subclass can be created by using the “extends” keyword. The syntax for declaring a subclass of class is as follows:
+
+class subclassName extends superclassName
+{
+  // Variables of subclass
+  // Methods of subclass
+}
+
+where class and extends are two keywords.
+
+
+Ques. 8 Which class in Java is superclass of every other class?
+
+Ans: In Java, Object class is the superclass of every other class.
+
+
+Ques. 9 How will you prove that the features of Superclass are inherited in Subclass?
+
+Ans: Refer to this tutorial: Inheritance in Java with Realtime Example
+
+
+Ques. 10 Can a class extend itself?
+
+Ans: No, a class cannot extend itself.
+
