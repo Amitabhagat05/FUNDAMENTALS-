@@ -1,0 +1,52 @@
+1) How to find the maximum occurring character in a given String? (solution)
+Write an efficient Java/C/Python program to return the maximum occurring character in the input string, e.g., if the input string is "Java" then the function should return 'a'.
+
+
+2) How to remove all duplicates from a given string? (solution)
+Write a program to remove all the duplicate characters from a given input String, like, if the given String is "Java" then the output should be "Java". The second or further occurrence of duplicates should be removed.
+
+
+3) How to print the duplicate characters from the given String? (solution)
+Write an efficient Java/C/Python/Ruby program to return the duplicate characters from given String, for example, if given String is "C++" then your program should print "+" Similarly, if the input is "Java and JavaScript" then your program should print "J", "a" and "v". You can ignore the case for finding duplicates.
+
+If you notice there is a pattern to solve these duplicate characters problem. For example, you can use a data structure like HashSet or HashMap to store characters and their count to find out which is duplicate and how many times they are appearing. Knowing these coding tips and patterns really help during coding interviews. 
+
+If you are interested to learn more about these kinds of coding patterns then I highly recommend you to checkout Grokking the Coding Interview: Patterns for Coding Questions course from Educative, an interactive learning portal. This course will teach you 15 common coding patterns like sliding window, two pointers, merge interval, etc, that you can use to solve 100+ Leetcode problems. 
+
+21 String Coding Problems from Java Interviews
+
+
+
+
+4) How to remove characters from the first String which are present in the second String? (solution)
+Write an efficient Java/c/Python function that takes two strings as arguments and removes the characters from the first string, which are present in the second string. For example, if the first String "India is great" and the second String is "in" then the output should be "da s great"
+
+
+5) How to check if two strings are rotations of each other? (solution)
+Write an efficient program to test if two given String is a rotation of each other or not, e.g. if the given String is "XYZ" and "ZXY" then your function should return true, but if the input is "XYZ" and "YXZ" then return false.
+
+
+6) How to reverse a given String? (solution)
+Write a program to reverse a String in C/Java/Python or choice of your programming language. You can write either the recursive or iterative solution. For example, if a given input is "abcd," then your function should return "dcba".
+
+
+7) How to reverse String without recursion? (solution)
+Same as the previous program, but you cannot use recursion, this time, you must solve this problem in C/Java/Python using iteration or loops. If you are not familiar with recursion and repetition, you can further check the Algorithms and Data Structures - Part 1 and 2 courses on Pluralsight. One of the better course to start with fundamental techniques to solve algorithms based problems.
+
+string programming interview questions for java developers
+
+
+
+8) How to print all permutation of a String? (solution)
+Write an efficient program to print all permutations of a given String in Java/C/Python or any programming language of your choice. For example, if given input is "123" then your program should print all 6 permutations e.g. "123", "132", "213", "231", "312" and "321".
+
+
+9) How to find the first non-repeating character in a given String? (solution)
+Write a program in any programming language you to find the first non-repeated character in a given String, for example, if the given String is "Java" then the first non-repeated character is "J"
+
+
+10) How to reverse the words in a given String sentence? (solution)
+Write an efficient program in Java or C++ to reverse the words in a given String sentence. For example, if the input is "Java is best," then your program should print "best is Java". There is no restriction on preserving white space.
+
+
+Read more: https://www.java67.com/2018/04/21-string-programming-and-coding-interview-questions-answers.html#ixzz7nkQNdxCn
