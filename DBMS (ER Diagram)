@@ -1,0 +1,39 @@
+Ques.1. What is an ER Diagram?
+
+Ans> An ER diagram is a graphical representation of an entity relationship model. It is used to represent the relationships between entities in a database.
+
+Ques.2. Can you explain the different symbols used in an ER diagram?
+
+Ans> The three most common symbols used in an ER diagram are rectangles, diamonds, and ovals. Rectangles are used to represent entities, while diamonds represent relationships between those entities. Ovals are used to represent attributes.
+
+Ques.3. How do you represent weak entities in ER diagrams?
+
+Ans> Weak entities are represented by double rectangles in ER diagrams.
+
+Ques.4. What are some of the best practices for designing an ERD?
+
+Ans> Some of the best practices for designing an ERD include using a consistent notation, keeping the diagram simple and easy to understand, and using primary and foreign keys to connect related entities.
+
+Ques.5. Why are composite keys important when modeling databases with entity-relationship diagrams?
+
+Ans> Composite keys are important when modeling databases with entity-relationship diagrams because they can help to uniquely identify each row in a table. This is especially important when modeling databases that will be used for transactional purposes, such as online stores. By using a composite key, you can ensure that each row in the database is uniquely identified, which can help to prevent errors during transactions.
+
+Ques.6. What is the difference between a crow’s foot and Chen notation? Which one would you recommend based on your experience using them?
+
+Ans> The main difference between crow’s foot and Chen notation is that crow’s foot notation uses boxes to represent entities, while Chen notation uses circles. I would recommend using crow’s foot notation because it is generally easier to understand.
+
+Ques.7. In what situations should we use ER diagrams vs UML class diagrams?
+
+Ans> ER diagrams are used to model the data stored in a database, while UML class diagrams are used to model the structure of a system. If you are trying to model the relationships between the data in a database, then you would use an ER diagram. If you are trying to model the relationships between the different components of a system, then you would use a UML class diagram.
+
+Ques.8. How can cardinality be applied to relationships in ER diagrams?
+
+Ans> Cardinality is a way of representing the minimum and maximum number of occurrences of an entity in a relationship. For example, if you have a relationship between two entities, A and B, and you want to indicate that A can be related to B multiple times, you would use a cardinality of 1:N.
+
+Ques.9. Is it possible to define inheritance hierarchies with ER diagrams?
+
+Ans> Yes, it is possible to define inheritance hierarchies using ER diagrams. This is typically done by using a supertype/subtype relationship, where the supertype is the parent class in the inheritance hierarchy and the subtype is the child class.
+
+Ques.10. What is the purpose of creating multiple subtypes or supertypes in an ER diagram?
+
+Ans> The purpose of creating multiple subtypes or supertypes in an ER diagram is to provide a more granular level of detail when modeling a specific entity type. This can be useful when trying to track different types of information for a given entity, or when trying to create a more general model that can be applied to multiple entity types.
