@@ -1,1 +1,59 @@
+Ques.1. What are the advantages of a multiprocessor system?
 
+Ans> There are some main advantages of a multiprocessor system:
+     *Enhanced performance.
+     *Multiple applications.
+     *Multi-tasking inside an application.
+     *High throughput and responsiveness.
+     *Hardware sharing among CPUs.
+
+
+Ques.2. What is kernel?
+
+Ans> A kernel is the central component of an operating system that manages the operations of computers and hardware. It basically manages operations of memory and CPU time. It is a core component of an operating system. Kernel acts as a bridge between applications and data processing performed at the hardware level using inter-process communication and system calls.
+
+
+Ques.3.  What are real-time systems?
+
+Ans> A real-time system means that the system is subjected to real-time, i.e., the response should be guaranteed within a specified timing constraint or the system should meet the specified deadline. 
+
+
+Ques.4. What are the different scheduling algorithms?
+
+Ans> First-Come, First-Served (FCFS) Scheduling. 
+     Shortest-Job-Next (SJN) Scheduling. 
+     Priority Scheduling. 
+     Shortest Remaining Time. 
+     Round Robin(RR) Scheduling. 
+     Multiple-Level Queues Scheduling. 
+ 
+
+Ques.5. What is a deadlock?  
+
+Ans> Deadlock is a situation when two or more processes wait for each other to finish and none of them ever finish.  Consider an example when two trains are coming toward each other on the same track and there is only one track, none of the trains can move once they are in front of each other.  A similar situation occurs in operating systems when there are two or more processes that hold some resources and wait for resources held by other(s). 
+
+ 
+Ques.6.  What is virtual memory?
+
+Ans> Virtual memory creates an illusion that each user has one or more contiguous address spaces, each beginning at address zero. The sizes of such virtual address spaces are generally very high. The idea of virtual memory is to use disk space to extend the RAM. Running processes don’t need to care whether the memory is from RAM or disk. The illusion of such a large amount of memory is created by subdividing the virtual memory into smaller pieces, which can be loaded into physical memory whenever they are needed by a process. 
+ 
+
+Ques.7. Describe the objective of multi-programming.
+
+Ans> Multi-programming increases CPU utilization by organizing jobs (code and data) so that the CPU always has one to execute. The main objective of multi-programming is to keep multiple jobs in the main memory. If one job gets occupied with IO, CPU can be assigned to other jobs. 
+
+Ques.8.  What is the time-sharing system?
+
+Ans> Time-sharing is a logical extension of multiprogramming. The CPU performs many tasks by switches that are so frequent that the user can interact with each program while it is running. A time-shared operating system allows multiple users to share computers simultaneously.
+
+
+Ques.9.  What is a thread?
+
+Ans> A thread is a path of execution within a process. A process can contain multiple threads.
+ 
+
+Ques.10. Give some benefits of multithreaded programming?
+
+Ans> A thread is also known as lightweight process. The idea is to achieve parallelism by dividing a process into multiple threads. Threads within the same process run in shared memory space, 
+
+ 
