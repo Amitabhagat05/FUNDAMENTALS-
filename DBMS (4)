@@ -1,0 +1,67 @@
+Ques.1. Who is the father of DBMS?
+
+Ans> Edgar Frank "Ted" Codd (19 August 1923 – 18 April 2003) was an English computer scientist who, while working for IBM, invented the relational model for database management, the theoretical basis for relational databases and relational database management systems.
+
+Ques.2. What are the 3 main types of databases?
+
+Ans> Hierarchical database systems. 
+     Network database systems. 
+     Object-oriented database systems.
+     
+
+Ques.3. What are the 4 major uses of DBMS?
+
+Ans> The typical database administrative tasks that can be performed using a DBMS include:
+ *Configuring authentication and authorization. Easily configure user accounts, define access policies, modify restrictions, and access       scopes. 
+ *Providing data backups and snapshots. 
+ *Performance tuning. 
+ *Data recovery.
+ 
+ 
+Ques.4. What are the 7 types of DBMS?
+
+Ans> Types of DBMS (Database Management System)
+    *NoSQL Database. A NoSQL which originally means a non-relational database or non-SQL provides a data storage and recovery mechanism. 
+    *ER Model. An ER model is usually used as a database. 
+    *Relational Database. 
+    *Document Database. 
+    *Network Database. 
+    *Graph Database. 
+    *Hierarchical Database.
+    
+ 
+Ques.5.  Explain the difference between intension and extension in a database.
+Following is the major difference between intension and extension in a database:
+
+Intension: Intension or popularly known as database schema is used to define the description of the database and is specified during the design of the database and mostly remains unchanged.
+Extension: Extension on the other hand is the measure of the number of tuples present in the database at any given point in time. The extension of a database is also referred to as the snapshot of the database and its value keeps changing as and when the tuples are created, updated, or destroyed in a database.
+
+
+Ques.6. Explain the difference between the DELETE and TRUNCATE command in a DBMS.
+
+Ans> DELETE command: this command is needed to delete rows from a table based on the condition provided by the WHERE clause.
+
+*It deletes only the rows which are specified by the WHERE clause.
+*It can be rolled back if required.
+*It maintains a log to lock the row of the table before deleting it and hence it’s slow.
+*TRUNCATE command: this command is needed to remove complete data from a table in a database. It is like a DELETE command which has no WHERE clause.
+
+It removes complete data from a table in a database.
+It can't be rolled back even if required. ( truncate can be rolled back in some databases depending on their version but it can be tricky and can lead to data loss). Check this link for more details
+It doesn’t maintain a log and deletes the whole table at once and hence it’s fast.
+
+
+Ques.7. What is a lock. Explain the major difference between a shared lock and an exclusive lock during a transaction in a database.
+
+Ans> A database lock is a mechanism to protect a shared piece of data from getting updated by two or more database users at the same time. When a single database user or session has acquired a lock then no other database user or session can modify that data until the lock is released.
+
+Ques.8. Shared Lock: A shared lock is required for reading a data item and many transactions may hold a lock on the same data item in a shared lock. Multiple transactions are allowed to read the data items in a shared lock.
+
+Ques.9. Exclusive lock: An exclusive lock is a lock on any transaction that is about to perform a write operation. This type of lock doesn’t allow more than one transaction and hence prevents any inconsistency in the database. 
+
+
+Ques.10. What is meant by normalization and denormalization?
+
+Ans> Normalization is a process of reducing redundancy by organizing the data into multiple tables. Normalization leads to better usage of disk spaces and makes it easier to maintain the integrity of the database.  
+
+Denormalization is the reverse process of normalization as it combines the tables which have been normalized into a single table so that data retrieval becomes faster. JOIN operation allows us to create a denormalized form of the data by reversing the normalization.
