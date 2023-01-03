@@ -1,1 +1,94 @@
+Q1. What Is a Generic Type Parameter?
+Type is the name of a class or interface. As implied by the name, a generic type parameter is when a type can be used as a parameter in a class, method or interface declaration.
+
+Let's start with a simple example, one without generics, to demonstrate this:
+
+public interface Consumer {
+    public void consume(String parameter)
+}
+Copy
+In this case, the method parameter type of the consume() method is String. It is not parameterized and not configurable.
+
+
+freestar
+Now let's replace our String type with a generic type that we will call T. It is named like this by convention:
+
+public interface Consumer<T> {
+    public void consume(T parameter)
+}
+Copy
+When we implement our consumer, we can provide the type that we want it to consume as an argument. This is a generic type parameter:
+
+public class IntegerConsumer implements Consumer<Integer> {
+    public void consume(Integer parameter)
+}
+Copy
+In this case, now we can consume integers. We can swap out this type for whatever we require.
+
+Q2. What Are Some Advantages of Using Generic Types?
+One advantage of using generics is avoiding casts and provide type safety. This is particularly useful when working with collections. Let's demonstrate this:
+
+List list = new ArrayList();
+list.add("foo");
+Object o = list.get(0);
+String foo = (String) o;
+Copy
+In our example, the element type in our list is unknown to the compiler. This means that the only thing that can be guaranteed is that it is an object. So when we retrieve our element, an Object is what we get back. As the authors of the code, we know it's a String, but we have to cast our object to one to fix the problem explicitly. This produces a lot of noise and boilerplate.
+
+
+freestar
+Next, if we start to think about the room for manual error, the casting problem gets worse. What if we accidentally had an Integer in our list?
+
+list.add(1)
+Object o = list.get(0);
+String foo = (String) o;
+Copy
+In this case, we would get a ClassCastException at runtime, as an Integer cannot be cast to String.
+
+Now, let's try repeating ourselves, this time using generics:
+
+List<String> list = new ArrayList<>();
+list.add("foo");
+String o = list.get(0);    // No cast
+Integer foo = list.get(0); // Compilation error
+Copy
+As we can see, by using generics we have a compile type check which prevents ClassCastExceptions and removes the need for casting.
+
+The other advantage is to avoid code duplication. Without generics, we have to copy and paste the same code but for different types. With generics, we do not have to do this. We can even implement algorithms that apply to generic types.
+
+
+freestar
+Q3. What Is Type Erasure?
+It's important to realize that generic type information is only available to the compiler, not the JVM. In other words, type erasure means that generic type information is not available to the JVM at runtime, only compile time.
+
+The reasoning behind major implementation choice is simple – preserving backward compatibility with older versions of Java. When a generic code is compiled into bytecode, it will be as if the generic type never existed. This means that the compilation will:
+
+Replace generic types with objects
+Replace bounded types (More on these in a later question) with the first bound class
+Insert the equivalent of casts when retrieving generic objects.
+It's important to understand type erasure. Otherwise, a developer might get confused and think they'd be able to get the type at runtime:
+
+public foo(Consumer<T> consumer) {
+   Type type = consumer.getGenericTypeParameter()
+}
+Copy
+The above example is a pseudo code equivalent of what things might look like without type erasure, but unfortunately, it is impossible. Once again, the generic type information is not available at runtime.
+
+Q4. If a Generic Type Is Omitted When Instantiating an Object, Will the Code Still Compile?
+As generics did not exist before Java 5, it is possible not to use them at all. For example, generics were retrofitted to most of the standard Java classes such as collections. If we look at our list from question one, then we will see that we already have an example of omitting the generic type:
+
+List list = new ArrayList();
+Copy
+Despite being able to compile, it's still likely that there will be a warning from the compiler. This is because we are losing the extra compile-time check that we get from using generics.
+
+The point to remember is that while backward compatibility and type erasure make it possible to omit generic types, it is bad practice.
+
+Q5. How Does a Generic Method Differ from a Generic Type?
+A generic method is where a type parameter is introduced to a method, living within the scope of that method. Let's try this with an example:
+
+public static <T> T returnType(T argument) { 
+    return argument; 
+}
+Copy
+We've used a static method but could have also used a non-static one if we wished. By leveraging type inference (covered in the next question), we can invoke this like any ordinary method, without having to specify any type arguments when we do so.
 
