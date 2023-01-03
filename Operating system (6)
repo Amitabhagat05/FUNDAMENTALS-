@@ -1,0 +1,80 @@
+Ques.1. What are interrupts?
+
+Ans> The interrupts are a signal emitted by hardware or software when a process or an event needs immediate attention. It alerts the processor to a high-priority process requiring interruption of the current working process. In I/O devices one of the bus control lines is dedicated for this purpose and is called the Interrupt Service Routine (ISR). 
+
+
+Ques.2. What is GUI?
+
+Ans> GUI is short for Graphical User Interface. It provides users with an interface wherein actions can be performed by interacting with icons and graphical symbols.
+
+
+Ques.3.  What is preemptive multitasking?
+
+Ans> Preemptive multitasking is a type of multitasking that allows computer programs to share operating systems (OS) and underlying hardware resources. It divides the overall operating and computing time between processes, and the switching of resources between different processes occurs through predefined criteria.
+
+
+Ques.4. What is a pipe and when is it used?
+
+Ans> A Pipe is a technique used for inter-process communication. A pipe is a mechanism by which the output of one process is directed into the input of another process. Thus it provides a one-way flow of data between two related processes.
+
+
+Ques.5. What are the advantages of semaphores?
+
+Ans> They are machine-independent.
+     Easy to implement.
+     Correctness is easy to determine.
+     Can have many different critical sections with different semaphores.
+     Semaphores acquire many resources simultaneously.
+     No waste of resources due to busy waiting.
+
+
+Ques.6.  What is a bootstrap program in the OS?
+
+Ans> Bootstrapping is the process of loading a set of instructions when a computer is first turned on or booted. During the startup process, diagnostic tests are performed, such as the power-on self-test (POST), that set or check configurations for devices and implement routine testing for the connection of peripherals, hardware, and external memory devices. The bootloader or bootstrap program is then loaded to initialize the OS.
+
+
+Ques.7.  What is IPC?
+
+Ans> Inter-process communication (IPC) is a mechanism that allows processes to communicate with each other and synchronize their actions. The communication between these processes can be seen as a method of co-operation between them.
+
+
+Ques.8. What are the different IPC mechanisms?
+
+Ans> These are the methods in IPC:
+
+*Pipes (Same Process) –
+This allows a flow of data in one direction only. Analogous to simplex systems (Keyboard). Data from the output is usually buffered until the input process receives it which must have a common origin.
+
+*Named Pipes (Different Processes) –
+This is a pipe with a specific name it can be used in processes that don’t have a shared common process origin. E.g. is FIFO where the details written to a pipe are first named.
+
+*Message Queuing –
+This allows messages to be passed between processes using either a single queue or several message queues. This is managed by the system kernel these messages are coordinated using an API.
+
+*Semaphores –
+This is used in solving problems associated with synchronization and to avoid race conditions. These are integer values that are greater than or equal to 0.
+
+*Shared memory –
+This allows the interchange of data through a defined area of memory. Semaphore values have to be obtained before data can get access to shared memory.
+
+*Sockets –
+This method is mostly used to communicate over a network between a client and a server. It allows for a standard connection which is computer and OS independent
+
+Ques.9. What is the difference between preemptive and non-preemptive scheduling?
+
+Ans> *In preemptive scheduling, the CPU is allocated to the processes for a limited time whereas, in Non-preemptive scheduling, the CPU is allocated to the process till it terminates or switches to waiting for state. 
+ 
+*The executing process in preemptive scheduling is interrupted in the middle of execution when higher priority one comes whereas, the executing process in non-preemptive scheduling is not interrupted in the middle of execution and waits till its execution. 
+ 
+*In Preemptive Scheduling, there is the overhead of switching the process from the ready state to running state, vise-verse, and maintaining the ready queue. Whereas the case of non-preemptive scheduling has no overhead of switching the process from running state to ready state. 
+ 
+*In preemptive scheduling, if a high-priority process frequently arrives in the ready queue then the process with low priority has to wait for a long, and it may have to starve. On the other hand, in the non-preemptive scheduling, if CPU is allocated to the process having a larger burst time then the processes with small burst time may have to starve. 
+ 
+*Preemptive scheduling attains flexibility by allowing the critical processes to access the CPU as they arrive into the ready queue, no matter what process is executing currently. Non-preemptive scheduling is called rigid as even if a critical process enters the ready queue the process running CPU is not disturbed. 
+ 
+*Preemptive Scheduling has to maintain the integrity of shared data that’s why it is cost associative it which is not the case with Non-preemptive Scheduling.
+
+
+Ques.10.  What is the zombie process?
+
+Ans> A process that has finished the execution but still has an entry in the process table to report to its parent process is known as a zombie process. A child process always first becomes a zombie before being removed from the process table. The parent process reads the exit status of the child process which reaps off the child process entry from the process table.
